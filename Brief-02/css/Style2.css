@@ -1,0 +1,164 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.P1 {
+		display: flex;
+		position: fixed;
+		top: 0;
+		background-color: black;
+		width: 100%;
+}
+.logo {
+	margin-left: 100px;
+	margin-top: 10px;
+	max-width: 55%;
+	height: auto;	
+}
+
+li {
+	display: inline;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+ul {
+	margin-top: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: rgb(51, 122, 183);
+}
+.btn:hover {
+    background-color: white;
+}
+
+.P2 {
+	padding: 50px;
+	margin-top: 65px;
+	margin-left: 100px;
+	color: white;
+}
+h1{
+	font-size: 30px;
+	font-weight: normal;
+}
+h1, p {
+	font-family: 'Montserrat', sans-serif;
+}
+.btn {
+	background-color: rgb(0, 138, 255);
+	border-radius: 10px;
+	padding: 10px 30px;
+}
+.btnDec {
+	background-color: rgb(0, 138, 255);
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 15px;
+	font-size: 15px;
+	margin-bottom: 60px;
+}
+.btnDec:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Table */
+
+table {
+	border-collapse: collapse;
+	margin-top: 160px;
+	margin-bottom: 10px;
+	width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+td {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+}
+tr {
+	   border: 1px solid grey;
+}
+.table-top {
+	background-color: rgb(51, 122, 183);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding: 10px;
+	color: white;
+	letter-spacing: 3px;
+}
+input[type=text] {
+    border-radius: 4px;
+    width: 20px;
+ }
+td:last-child > input{
+	width: 120px;
+
+}
+/* Button */
+input[type=submit] {
+    background-color: rgb(51, 122, 183);
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin: 23px;
+	width: 20%;
+	margin-bottom: 50px;
+	position: relative;
+	left: 960px;
+}
+input[type=submit]:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 55px -6px rgb(104,168,221);
+}
+
+/* Footer */
+footer {
+	background-color: black;
+	height: 100px;
+	display: flex;
+}
+.f1, .f2, .f3 {
+	display: flex;
+	color: rgb(119, 119, 119);
+}
+.f1 {
+	flex: 1;
+	display: block;
+	margin-top: 10px;
+	margin-left: 50px;
+	line-height: 10px;
+
+}
+.f2 {
+	flex: 1;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.f3 {
+	position: relative;
+	left: 50px;
+	
+}
+.icons {
+    margin-top: 50px;
+    position: relative;
+    right: 70px;
+    letter-spacing: 10px;
+
+
+}
