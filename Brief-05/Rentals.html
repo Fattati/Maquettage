@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css\style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+
+    <header class="header">
+        <a href="/" class="logo">LOCATION</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Inscription.html">REGISTER</a></li>
+            <li><a href="Rentals.html">RESERVATION</a></li>
+        </ul>
+    </header>
+
+    <!-- Content -->
+    <div id="C1">
+        <h2>Car rentals for any kind of trip</h2>
+        <div class="input">
+            <select class="inp">
+                <option value="Aston Martin">Aston Martin</option>
+                <option value="Bentley">Bentley</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Maserati">Maserati</option>
+                <option value="Maserati">Porsche</option>
+                <option value="Maserati">Rolls Royce</option>
+                <option value="Maserati">Lamborghini</option>
+              </select>
+            <!-- <input type="date" class="inp1">
+            <input type="date" class="inp2"> -->
+            <button class="btnx"onclick="openForm()" >Reserve</button>
+        </div>
+    </div>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>LOCATION</h1>
+      
+          <label for="email"><b>Nom Client</b></label>
+          <input type="text" placeholder="Enter Your Name" name="email" required>
+      
+          <label for="psw"><b>Age</b></label>
+          <input type="text" placeholder="Enter Your Age" name="psw" required>
+
+          <label for="psw"><b>Location Period</b></label>
+          <input type="text" placeholder="Enter Your Location Period" name="psw" required>
+      
+          <button type="submit" class="btn">Reserve</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    <h2 class="t2">Popular destinations for car rentals</h2>
+    <div id="container">
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/i1.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>London</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque. Soluta, eaque id assumenda facilis sint cumque maxime officiis iusto laboriosam doloremque tempore ipsam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/i2.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Rome</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque. Soluta, eaque id assumenda facilis sint cumque maxime officiis iusto laboriosam doloremque tempore ipsam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/i3.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Milan</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque. Soluta, eaque id assumenda facilis sint cumque maxime officiis iusto laboriosam doloremque tempore ipsam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/i4.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Dubai</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque. Soluta, eaque id assumenda facilis sint cumque maxime officiis iusto laboriosam doloremque tempore ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tape" class="tape">
+        <div>
+            <h1>Save time, save money!</h1>
+            <p class="margin_space"> Sign up and we'll send the best deals to you </p>
+            <div class="T1">
+                <input type="text" placeholder="Your email" class="input1" id="input1">
+                <button class="btn" onclick="validation()"><i class="fas fa-envelope"></i> Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="f1">
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+        </div>
+        <div class="f2">
+            <span>Links</span>
+            <ul class="list">
+                <li><a>Home</a></li>
+                <li><a>Register</a></li>
+                <li><a>Reservation</a></li>
+
+            </ul>
+        </div>
+        <div class="f3">
+            <span>Shop</span>
+            <ul class="list">
+                <li><a>Terms & Conditions</a></li>
+                <li><a>Returns & Exchanges</a></li>
+                <li><a>Delivery Information</a></li>
+
+            </ul>
+        </div>
+
+        <div class="f4">
+            <input type="text" placeholder="Search..." class="input2">
+        </div>
+
+    <script src="js/script2.js"></script>
+
+    </footer>
+
+</body>
+</html>

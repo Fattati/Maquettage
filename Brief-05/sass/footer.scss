@@ -1,0 +1,70 @@
+.tape {
+    background-color:  #333333;
+    color: white;
+    height: auto;
+    padding: 2vw;
+    margin-top: 2vw;;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    background-color: black;
+    font-size: 18px;
+    padding: 10px 30px;  
+    border: none;
+    color: white;
+    height: 44px;
+    border-radius: 5px;
+  }
+  .input1 {
+    width: 450px;
+    height: 40px;
+    padding: 5px; 
+    border-radius: 5px;
+  }
+  
+  // Footer
+  footer {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+    color: white;
+  }
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .list li a {
+    text-decoration: none;
+  }
+  .f1 {
+    max-width: 300px;
+  }
+  .f2 {
+    text-decoration: none;
+  }
+  .f3
+  {
+    margin-left: 40px;
+  }
+  .input2 {
+    border: 1px solid black;
+    padding: 5px 15px;
+    height: 25px;
+    width: 300px;
+  }
+  
+  @media (max-width: 800px) {
+    footer {
+      display: block;
+    }
+    .f1 {
+      max-width: 480px;
+    }
+    .f3 {
+      margin: 0;
+    }
+  }
