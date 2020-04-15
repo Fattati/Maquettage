@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container right-panel-active" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Update Account</h1>
+                <div class="social-container">
+
+                </div>
+                <input type="text" placeholder="Name" class="data1" />
+                <input type="email" placeholder="Email" class="data2" disabled />
+                <input type="password" placeholder="Password" id="txtPassword" class="data3" />
+                <button onclick="update()">Update</button>
+            </form>
+        </div>
+        <div class=" overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Update your infomations</h1>
+                    <p>Contact us if you face any problems.</p>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            console.log(sessionStorage.getItem('email'));
+            $.post('/getDataByEmail', {
+                email: sessionStorage.getItem('email')
+            }, (response) => {
+                response = JSON.parse(response);
+                // 
+                // document.getElementsByClassName('data')[0].value = response.data2;
+                // document.getElementsByClassName('data')[1].value = response.data3;
+                // document.getElementsByClassName('data')[2].value = response.data1;
+                $('.data1').val(response.data1);
+                $('.data2').val(response.data2);
+                $('.data3').val(response.data3);
+            });
+            // 
+            function update() {
+                $.post('/updateData', {
+                    email: sessionStorage.getItem('email'),
+                    data1: $('.data1').val(),
+                    data3: $('.data3').val()
+                }, (response) => {
+                    console.log(response);
+                });
+            }
+        </script>
+</body>
+
+</html>

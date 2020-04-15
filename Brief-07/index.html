@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+
+    <header class="header">
+        <a href="/" class="logo">LOCATION</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Inscription.html">REGISTER</a></li>
+            <li><a href="Rentals.html">RESERVATION</a></li>
+        </ul>
+    </header>
+
+    <!-- Slider -->
+    <div id="slider">
+        <img src="img/img1.jpg" class="slider-img">
+        <img src="img/img2.jpg" class="slider-img">
+        <img src="img/img3.jpg" class="slider-img">
+        <img src="img/img4.jpg" class="slider-img">
+        <button class="prev" onclick="incrementerslider(-1)"><</button>
+        <button class="next" onclick="incrementerslider(1)">></button>
+    </div>
+    <script src="js/script.js"></script>
+
+    <!-- Content -->
+    <div class="content">
+        <h2 class="title">Browse by Brand</h2>
+        <div class="cars1">
+            <img src="img/car1.jpg" class="car">
+            <img src="img/car2.jpg" class="car">
+            <img src="img/car3.jpg" class="car">
+            <img src="img/car4.jpg" class="car">
+        </div>
+        <div class="cars2">
+            <img src="img/car5.jpg" class="car">
+            <img src="img/car6.jpg" class="car">
+            <img src="img/car7.jpg" class="car">
+            <img src="img/car8.jpg" class="car">
+        </div>
+    </div>
+
+    <div id="tape" class="tape">
+        <div>
+            <h1>Save time, save money!</h1>
+            <p class="margin_space"> Sign up and we'll send the best deals to you </p>
+            <div class="T1">
+                <input type="text" placeholder="Your email" class="input1" id="input1">
+                <button class="btn" onclick="validation()"><i class="fas fa-envelope"></i> Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="f1">
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+        </div>
+        <div class="f2">
+            <span>Links</span>
+            <ul class="list">
+                <li><a>Home</a></li>
+                <li><a>Register</a></li>
+                <li><a>Reservation</a></li>
+
+            </ul>
+        </div>
+        <div class="f3">
+            <span>Shop</span>
+            <ul class="list">
+                <li><a>Terms & Conditions</a></li>
+                <li><a>Returns & Exchanges</a></li>
+                <li><a>Delivery Information</a></li>
+
+            </ul>
+        </div>
+
+        <div class="f4">
+            <input type="text" placeholder="Search..." class="input2">
+        </div>
+        <script src="js/script2.js"></script>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: black;
+}
+
+@import "menu.scss";
+
+// Slider
+
+#slider {
+  margin-top: 90px;
+}
+
+.slider-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  // border: 20px solid white;
+  height: 700px;
+  // height: 500px;
+}
+
+.next, .prev{
+  padding: 8px 14px;
+  background: white;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 55%;
+  // border-radius: 50%;
+  cursor: pointer;
+}
+.next {
+  margin-left: 93%;
+}
+.prev {
+  margin-left: 5%;
+}
+
+// Content
+.title {
+  text-align: center;
+  color: white;
+}
+.cars1, .cars2 {
+  display: flex;
+  justify-content: center;
+}
+.car {
+  width: 20%;
+  padding: 20px; 
+}
+.car:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+@import "footer.scss";
+  
