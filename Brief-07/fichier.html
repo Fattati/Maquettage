@@ -12,8 +12,9 @@
 
 <body>
     <div class="container">
-        <h2>Thanks for your registration with us, if you have a problem and want to delete your data and register again
-            click the button below</h2>
+        <h2>Thanks for your registration with us, if you have a problem and want to delete or update your data and
+            register again
+            click the one of the buttons below</h2>
         <input type="button" value="Delete" id="btndelete" class="btn btn-secondary btn-lg">
         <input type="button" value="Update" id="btnUpdate" class="btn btn-secondary btn-lg">
     </div>
@@ -26,6 +27,8 @@
         console.log(sessionStorage.getItem('email'));
         // 
         document.getElementById('btndelete').addEventListener('click', () => {
+            // window.location.href = '/deleted'
+            alert('USER DELETED SUCCESSFULLY');
             $.post('/delete', {
                 email: sessionStorage.getItem('email')
             }, (Response) => {

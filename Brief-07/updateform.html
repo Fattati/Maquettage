@@ -53,6 +53,7 @@
             });
             // 
             function update() {
+                alert('USER UPDATED SUCCESSFULLY');
                 $.post('/updateData', {
                     email: sessionStorage.getItem('email'),
                     data1: $('.data1').val(),

@@ -21,6 +21,9 @@ app.get('/page2', (req, res) => {
 app.get('/update', (req, res) => {
     res.sendFile(__dirname + "/updateform.html");
 });
+app.get('/deleted', (req, res) => {
+    res.sendFile(__dirname + "/deleteConfirmation.html");
+});
 // 
 app.post('/save', (req, res) => {
     console.log(req.body.data);
