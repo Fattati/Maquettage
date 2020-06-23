@@ -1,6 +1,7 @@
 # WP Brief 2
 
 -Install Wordpress
+
 -Create Database
 -Install Astra theme
 -Install some E-commerce template from Astra Options
